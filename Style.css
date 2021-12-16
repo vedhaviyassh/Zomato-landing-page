@@ -1,0 +1,356 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+.navbar{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafc;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 99;
+}
+
+.navbar__brand{
+ width: 100px; 
+}
+
+.brand__logo{
+  height: 70px;
+  padding: 0px 40px;
+}
+
+.navbar__nav__items{
+  width: 230px;
+}
+
+.button__primary{
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.button__primary:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+body{
+  font-family: "Merriweather", sans-serif;
+  background-color: #ebf2ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.container{
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.hero__container{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero__image__container{
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.hero__pattern{
+  position: absolute;
+  width: 100%;
+}
+
+.hero__shape{
+  position: absolute;
+  width: 100%;
+}
+
+.hero__image{
+  top: 35px;
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px  rgba(0, 0, 0, 0.25);
+}
+
+.hero__text{
+  color: #1d3557;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.video__footage__container{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__footage{
+  position: relative;
+}
+
+.video__footage::before{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  content: "";
+  position: absolute;
+  transform: translate(1rem,1rem);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.video__footage__text{
+  padding: 35px 200px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #1d3557;
+  text-align: center;
+}
+
+.food__menu__container{
+  position: relative;
+  transition: 0.3s;
+  margin: 5rem 0;
+  height: 700px;
+  text-align: center;
+}
+
+.food__menu__container__diagonal {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+
+  height: 100%;
+  width: 100%;
+
+  transform: skewY(-5deg);
+
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  z-index: -3;
+}
+
+.food__menu__card__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  width: 100%;
+}
+.food__menu__card {
+  flex-basis: 30%;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.food__menu__card:nth-child(2) {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.food__menu__card__image {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+
+.food__menu__card__details {
+  padding: 1rem;
+  text-align: left;
+  color: #1d3557;
+}
+
+.food__list__view__more {
+  cursor: pointer;
+  margin: 5.5rem 0;
+  transition: 0.3s;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.food__list__view__more:hover {
+  background: #fff;
+  color: #dd2476;
+  margin: 5.5rem 20rem; 
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.restaurant__list__container{
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant__list__row_1{
+  display: flex;
+  align-items: baseline;
+}
+
+.restaurant__list__row_2{
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.restaurant2,
+  .restaurant4 {
+    width: 300px;
+    height: 260px;
+    margin: 0 5px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+.restaurant1,
+  .restaurant3 {
+    width: 250px;
+    height: 180px;
+    margin: 0 5px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+.email__subscriber__container{
+  margin-top: 3.5rem;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.email__subscriber__input__field{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.email__input{
+  width: 20rem;
+  border: 1px solid #ee89a0;
+  border-radius: 4px;
+  background-color: #fcedf0;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.email__input::placeholder {
+  color: #bdbcbc;
+}
+
+.quote__container {
+  position: relative;
+  margin: 4rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 13px;
+  background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+}
+.quote_image_overlay {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065;
+  opacity: 49%;
+}
+.quote_image_text {
+  color: #fff;
+  z-index: 3;
+  margin: 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer{
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 15px 15px 0 0;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+
+footer > img {
+  width: 300px;
+  filter: brightness(0) invert(1);
+}
+
+footer > ul {
+  margin-top: -1rem;
+  color: #fff;
+}
+
+footer > ul > li{
+  margin: 5px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
